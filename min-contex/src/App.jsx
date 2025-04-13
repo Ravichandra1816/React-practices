@@ -1,10 +1,15 @@
 import React from "react";
+import UserContexProvider from "./Contex/UserContexProvider";
+import Login from "./Components/Login";
+import Profile from "./Components/Profile";
 
 const App = () => {
   return (
-    <div>
+    <UserContexProvider>
       <h1>Hello min contex</h1>
-    </div>
+      <Login />
+      <Profile />
+    </UserContexProvider>
   );
 };
 
